@@ -1,0 +1,109 @@
+.people-edit-container{
+  padding-top: 80px;
+  padding-bottom: 100px;
+  .people-edit{
+    width: 1000px;
+    margin: 0 auto;
+		box-shadow: 0 0 3px #e1e1e1,0 0 3px #f5f5f5;
+    .people-edit-header{
+      height: 230px;
+      position: relative;
+      .edit-header-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+    .people-edit-body{
+      background-color: #fff;
+      display: flex;
+      .edit-body-ava{
+        width: 220px;
+        .ava-container{
+          position: relative;
+          cursor: pointer;
+          img{
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            width: 160px;
+            border-radius: 10px;
+            border: 5px solid #fff;
+          }
+        }
+      }
+      .edit-body-info{
+        flex: auto;
+        .edit-info-body{
+          .edit-info-item{
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: baseline;
+            .info-item-title{
+              width: 140px;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 80px;
+            }
+            .info-item-body{
+              .item-body-content{
+              }
+            }
+            .edit-flex{
+              display: flex;
+              align-items: center;
+            }
+          }
+          .edit-info-item:last-child{
+            border-bottom: none;
+          }
+          .edit-info-item:hover{
+            .people-edit-edit{
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .people-edit-edit{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      line-height: 30px;
+      display: none;
+      color: #175199;
+      cursor: pointer;
+    }
+    .people-edit-write{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #175199;
+      cursor: pointer;
+    }
+    .people-edit-add{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #175199;
+      cursor: pointer;
+      transform: translateY(0px);
+      .add-icon{
+        font-size: 18px;
+      }
+    }
+    .item-body-edit-btn{
+      display: flex;
+      padding: 20px 0;
+    }
+    .item-body-edit-btn-inline{
+      display: flex;
+    }
+    .people-edit-save-btn{
+      margin-right: 20px;
+    }
+    .people-edit-save-btn-inline{
+      margin: 0 20px;
+    }
+  }
+}

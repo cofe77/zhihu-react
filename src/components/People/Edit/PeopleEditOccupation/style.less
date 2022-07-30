@@ -1,0 +1,37 @@
+.occupation-item-container{
+  transform: translateX(-7px);
+  .occupation-item{
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    padding: 5px 5px 5px 0;
+    width: fit-content;
+    .occupation-item-icon{
+      margin: 0 10px;
+      img{
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+      }
+    }
+    .occupation-item-info{
+      width: 160px;
+      font-size: 15px;
+    }
+    .occupation-item-close{
+      font-size: 22px;
+      line-height: 22px;
+      display: none;
+    }
+  }
+  .occupation-item:hover{
+    background-color: #eee;
+    cursor: pointer;
+    .occupation-item-close{
+      display: block;
+    }
+  }
+}
+.occupation-input{
+  display: flex;
+}

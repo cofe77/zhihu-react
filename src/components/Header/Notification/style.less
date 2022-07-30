@@ -1,0 +1,106 @@
+.nitification{
+  width: 400px;
+  .notificationHeader{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    justify-content: space-evenly;
+    .notification-icon{
+      width: 120px;
+      font-size: 20px;
+      line-height: 16px;
+      color: #8590a6;
+    }
+    .notification-icon-active{
+      color: #06f;
+    }
+    .notificationHeader-divider{
+      height: 24px;
+    }
+  }
+  .notificationBody{
+    width: 100%;
+    height: 350px;
+    border-bottom: 1px solid #eee;
+    .default-notification{
+      height: 350px;
+      overflow-y: scroll;
+      padding: 0 15px;
+      .default-notification-item{
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    .follow-notification{
+      height: 350px;
+      overflow-y: scroll;
+      .follow-notification-header{
+        text-align: center;
+        color: #8590a6;
+        line-height: 50px;
+        border-bottom: 1px solid #ebebeb;
+        margin: 0 15px;
+      }
+      .follow-notification-item{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        .follow-item-ava{
+          img{
+            width: 42px;
+            height: 42px;
+            border-radius: 5px;
+          }
+        }
+        .follow-item-name{
+          margin-left: 10px;
+          font-weight: 600;
+        }
+      }
+      .follow-notification-item:hover{
+        background-color: #ebebeb;
+      }
+    }
+    .vote-notification{
+      height: 350px;
+      overflow-y: scroll;
+      padding: 0 15px;
+      .vote-notification-item{
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    a{
+      color: #144583;
+    }
+    .notification-item-actor:not(:last-child)::after{
+      content: "、";
+      color: #144583;
+    }
+  }
+  .notificationFooter{
+    width: 100%;
+    background-color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8590a6;
+    padding: 0 20px;
+    .notification-setting{
+      cursor: pointer;
+      .notification-setting-text{
+        margin-left: 6px;
+      }
+    }
+    .notification-view-all{
+      cursor: pointer;
+    }
+  }
+}

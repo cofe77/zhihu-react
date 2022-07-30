@@ -1,0 +1,52 @@
+.edit-info-header{
+  border-bottom: 1px solid #eee;
+  .info-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .info-header-main{
+      display: flex;
+      align-items: baseline;
+      .edit-info-header-item{
+        display: flex;
+        align-items: baseline;
+        line-height: 80px;
+        .info-header-item-title{
+          width: 140px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .info-header-item-body{
+          width: 440px;
+          .info-header-btn{
+            display: flex;
+            padding: 0 0 20px 0;
+          }
+        }
+      }
+      .edit-info-item:last-child{
+        border-bottom: none;
+      }
+      .edit-info-item:hover{
+        .people-edit-edit{
+          display: inline-block;
+        }
+      }
+      .header-main-content{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-right: 30px;
+      }
+      .people-edit-edit-nick{
+        font-size: 15px;
+        color: #175199;
+        cursor: pointer;
+      }
+    }
+    .info-header-back{
+      padding-right: 20px;
+      cursor: pointer;
+    }
+  }
+}

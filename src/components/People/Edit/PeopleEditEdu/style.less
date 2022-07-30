@@ -1,0 +1,41 @@
+.edu-edit-form-top{
+  display: flex;
+  margin-bottom: 20px;
+}
+.edu-item-container{
+  transform: translateX(-12px);
+  margin-bottom: 20px;
+  .edu-item{
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    padding: 5px 5px 5px 0;
+    width: fit-content;
+    .edu-item-icon{
+      margin: 0 10px;
+      img{
+        width: 20px;
+        border-radius: 999px;
+      }
+    }
+    .edu-item-info{
+      line-height: 25px;
+      width: 360px;
+      font-size: 15px;
+      .edu-info-date{
+        color: grey;
+      }
+    }
+    .edu-item-close{
+      font-size: 30px;
+      display: none;
+    }
+  }
+  .edu-item:hover{
+    background-color: #eee;
+    cursor: pointer;
+    .edu-item-close{
+      display: block;
+    }
+  }
+}

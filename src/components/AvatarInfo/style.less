@@ -1,0 +1,65 @@
+.avatar-info{
+  position: relative;
+  .author-ava{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    float: left;
+  }
+  .avatar-info-container{
+    width: 340px;
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 18px -5px gray;
+    z-index: 999;
+    .avatar-info-header{
+      display: flex;
+      border-bottom: 1px solid #eee;
+      .avatar-info-ava{
+        width: 55px;
+        height: 55px;
+        position: relative;
+        top: -10px;
+        left: 10px;
+      }
+      .avatar-info-title{
+        flex: auto;
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+    .avatar-info-body{
+      display: flex;
+      padding: 10px 20px;
+      .avatar-info-body-item{
+        flex: 1;
+        .avatar-info-body-item-title{
+          text-align: center;
+          color: gray;
+        }
+        .avatar-info-body-item-content{
+          text-align: center;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+      .avatar-info-body-item:hover{
+        cursor: pointer;
+        .avatar-info-body-item-title,
+        .avatar-info-body-item-content{
+          color: #f60;
+        }
+      }
+    }
+    .avatar-info-footer{
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+    }
+  }
+}
+.avatar-info:hover{
+  cursor:pointer;
+}

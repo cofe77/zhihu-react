@@ -1,0 +1,66 @@
+.private-message{
+  width: 360px;
+  .private-message-header{
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+  }
+  .private-message-header:hover{
+    color: #8590a6;
+  }
+  .private-message-body{
+    .private-message-section{
+      height: 350px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      .private-message-item{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        .private-message-ava{
+          img{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+          }
+        }
+        .private-message-content{
+          flex: 1;
+          overflow: hidden;
+          margin-left: 15px;
+          .private-message-user-info{
+            display: flex;
+            align-items: center;
+            .private-message-username{
+              font-size: 15px;
+            }
+            .private-message-authentication{
+              margin-left: 10px;
+              color: rgb(0, 102, 255);
+              line-height: 15px;
+            }
+          }
+          .private-message-text{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #8590a6;
+          }
+        }
+      }
+      .private-message-item:hover{
+        background-color: #ebebeb;
+      }
+    }
+  }
+  .private-message-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #8590a6;
+    border-top: 1px solid #ebebeb;
+  }
+}
