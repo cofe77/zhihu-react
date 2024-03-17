@@ -86,8 +86,9 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    // "start": "node scripts/start.js", // for nodejs v16
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider & node scripts/start.js", // for nodejs v20+
+    "start":"node scripts/start.js",
+    "nodejsv16":"node scripts/start.js",
+    "nodejsv20+": "set NODE_OPTIONS=--openssl-legacy-provider & node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
